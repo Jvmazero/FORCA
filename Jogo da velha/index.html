@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <div id="board" class="board">
+      <div class="cell empty" onclick="handleMove(0)"></div>
+      <div class="cell empty" onclick="handleMove(1)"></div>
+      <div class="cell empty" onclick="handleMove(2)"></div>
+      <div class="cell empty" onclick="handleMove(3)"></div>
+      <div class="cell empty" onclick="handleMove(4)"></div>
+      <div class="cell empty" onclick="handleMove(5)"></div>
+      <div class="cell empty" onclick="handleMove(6)"></div>
+      <div class="cell empty" onclick="handleMove(7)"></div>
+      <div class="cell empty" onclick="handleMove(8)"></div>
+    </div>
+  </div>
+  <div class="controls">
+    <h1>JOGO DA VELHA</h1>
+    <button onclick="resetGame()">Reiniciar Jogo</button>
+    <p id="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

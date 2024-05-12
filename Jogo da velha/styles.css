@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('waffles.png') center center no-repeat;
+    background-size: cover;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .board {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 40px;
+    margin: auto;
+  }
+  
+  .cell {
+    position: absolute;
+    width: 140px;
+    height: 130px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 18px;
+  }
+  
+  .cell.empty {
+    background: none;
+  }
+  
+  .cell.x {
+    background: url('banana.png') center center no-repeat;
+    background-size: contain;
+  }
+  
+  .cell.o {
+    background: url('mirtilo.png') center center no-repeat;
+    background-size: contain;
+  }
+  
+  .cell:nth-child(1) { top: -250px; left: -55px; }
+  .cell:nth-child(2) { top: -250px; left: 135px; }
+  .cell:nth-child(3) { top: -240px; left: 320px; }
+  .cell:nth-child(4) { top: -70px; left: -60px; }
+  .cell:nth-child(5) { top: -65px; left: 130px; }
+  .cell:nth-child(6) { top: -70px; left: 320px; }
+  .cell:nth-child(7) { top: 110px; left: -60px; }
+  .cell:nth-child(8) { top: 120px; left: 120px; }
+  .cell:nth-child(9) { top: 105px; left: 300px; }
+  
+  .controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
